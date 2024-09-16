@@ -18,6 +18,7 @@ dotenv.config();
 // Middleware for handling CORS policy
 // Option1 : For all origins with default of cors(*)
 // app.use(cors());
+
 // Option2: Allow custom origins
 app.use(
 	cors({
