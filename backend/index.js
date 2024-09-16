@@ -21,7 +21,7 @@ dotenv.config();
 // Option2: Allow custom origins
 app.use(
 	cors({
-		origin: "http://localhost:5173",
+		origin: "https://book-store-rose-kappa.vercel.app/",
 		methods: ["GET", "POST", "PUT", "DELETE"],
 		allowedHeaders: ["Content-Type", "Authorization"],
 		credentials: true,
