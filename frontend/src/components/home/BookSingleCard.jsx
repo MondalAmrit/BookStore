@@ -84,7 +84,7 @@ const BookSingleCard = ({ book }) => {
 			</div>
 
 			{/* Action Buttons */}
-			<div className="flex justify-between items-center gap-x-4 border-t pt-4 mt-4">
+			<div className="flex justify-between items-center gap-x-2 border-t pt-4 mt-4">
 				<div className="flex items-center gap-4">
 					<BookModalOpener book={book} />
 				</div>
