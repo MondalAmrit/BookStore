@@ -18,11 +18,14 @@ const SignUp = () => {
 		const password = passwordRef.current.value;
 
 		try {
-			let res = await axios.post("http://localhost:8080/user/signup", {
-				name,
-				email,
-				password,
-			});
+			let res = await axios.post(
+				"https://bookstore-csp3.onrender.com/user/signup",
+				{
+					name,
+					email,
+					password,
+				}
+			);
 
 			const { user, token } = res.data;
 

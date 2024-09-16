@@ -25,7 +25,7 @@ const CreateBooks = () => {
 		// const user = localStorage.getItem("user");
 		setLoading(true);
 		axios
-			.post("http://localhost:8080/books", data, {
+			.post("https://bookstore-csp3.onrender.com/books", data, {
 				headers: {
 					Authorization: `Bearer ${token}`,
 				},
