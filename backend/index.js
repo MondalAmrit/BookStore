@@ -10,9 +10,6 @@ import dotenv from "dotenv";
 
 const app = express();
 
-//  Middleware for parsing request body
-app.use(express.json());
-
 dotenv.config();
 
 // Middleware for handling CORS policy
@@ -28,6 +25,9 @@ app.use(
 		credentials: true,
 	})
 );
+
+//  Middleware for parsing request body
+app.use(express.json());
 
 //  Middleware for books routes
 app.use("/books", bookRoutes);
